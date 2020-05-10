@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://sunaina:KiDHtVFBmNR89uNt@devcon-vwttg.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysercrettoken",
+  "githubClientId": "30b73c2fc3211ab12ab9",
+  "githubSecret": "53132493df095f3d68333446f93e77833616473f"
+}
