@@ -19,8 +19,8 @@ router.post(
       .isEmpty(),
     check("email", "Please include a valid email").isEmail(),
     check("password", "Password should be of minimum 5 words").isLength({
-      min: 5
-    })
+      min: 5,
+    }),
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -42,14 +42,14 @@ router.post(
       const avatar = gravatar.url(email, {
         s: "200",
         r: "pg",
-        d: "mm"
+        d: "mm",
       });
 
       user = new User({
         name,
         email,
         avatar,
-        password
+        password,
       });
 
       //encrypt password
@@ -61,8 +61,8 @@ router.post(
       //return jsonwebtoken
       const payload = {
         user: {
-          id: user.id
-        }
+          id: user.id,
+        },
       };
       jwt.sign(
         payload,
