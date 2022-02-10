@@ -19,7 +19,7 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.4",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "request": "^2.88.2"
